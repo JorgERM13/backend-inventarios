@@ -1,0 +1,30 @@
+GET http://127.0.0.1:8000/api/usuario
+
+###Guardar usuario
+POST http://127.0.0.1:8000/api/usuario
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name":"admin",
+    "email": "admin@mail.com",
+    "password": "admin123456"
+
+}
+
+###Mostrar
+GET http://127.0.0.1:8000/api/usuario/1
+
+###Actualizar
+PUT http://127.0.0.1:8000/api/usuario/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name":"prueba modificado",
+    "email": "prueba.modificado@mail.com",
+    "password":"prueba123456"
+}
+
+###Eliminar
+DELETE http://127.0.0.1:8000/api/usuario/2
